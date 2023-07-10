@@ -1,6 +1,6 @@
 import os
-
 from structures.client import AClient
+
 
 def load_commands(client: AClient) -> None:
     handlers_dir = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +11,7 @@ def load_commands(client: AClient) -> None:
         for module in files:
             if module not in ("__init__.py", "template.py") and module[-3:] == ".py":
                 module_path = os.path.join(root, module)
-                module_name = module_path[len(os.path.dirname(commands_dir)) + 1:-3].replace("/", ".")
+                module_name = module_path[len(os.path.dirname(commands_dir)) + 1:-3].replace(os.sep, ".")
                 commands.append(module_name)
 
     for cmd in commands:
