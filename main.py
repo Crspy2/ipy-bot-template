@@ -34,6 +34,5 @@ client.logger = logger
 load_events(client)
 load_commands(client)
 
-client.initialize_db(os.environ.get("DB_CONN_STR"))
 client.start()
 
