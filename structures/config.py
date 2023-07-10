@@ -9,7 +9,3 @@ class Colors(Enum):
 class Config():
     def __init__(self):
         self.colors: Colors = Colors
-        self.price_multiplier = 2
-        self.log_channel_id = 1123133377751560293
-        self.sellix_product_id = "640d631074c7d"
-        self.partner_discount = 0.50  # 50%
