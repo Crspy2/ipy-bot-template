@@ -21,9 +21,26 @@
 # Installation
 > 1. Clone this repository. To switch to a different version, `cd` into this cloned repository and run `git checkout [branch name/version here]`
 > 2. It's generally advised to work in a Python virtual environment. Here are steps to create one *(the `interactions.py` library requires Python 3.10.0 or later)*:
+> Instructions for MacOS / Linux:
 > ```
-> $ python3 -m venv env
-> $ source env/bin/activate
+> $ python3 -m venv venv
+> $ source venv/bin/activate
+> ```
+>
+> Instructions for Windows (Command Prompt):
+> ```
+> $ python3 -m venv venv
+> $ venv\Scripts\activate.bat
+> ```
+>
+> Instructions for Windows (Powershell):
+> ```
+> $ python3 -m venv venv
+> $ venv\Scripts\activate.ps1
+> ```
+> Note: If you receive an error stating that the execution of scripts is disabled on your system, you may need to change the execution policy for PowerShell. You can do this by running PowerShell as an administrator and executing the following command:
+> ```
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 > ```
 > 3. Create a Discord bot token from [here](https://discord.com/developers/applications/)  
 > **Register it for slash commands:**
